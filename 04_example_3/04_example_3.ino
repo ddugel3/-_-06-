@@ -20,7 +20,7 @@ void loop() {
 }
 
 int toggle_state(int toggle) {
-  toggle %= toggle;
   toggle++;
-  return toggle;
+  if (toggle==1)  return toggle;
+  else return toggle%2;
 }
